@@ -1,0 +1,50 @@
+:root {
+    box-sizing: border-box;
+
+    font-size: 62.5%; /*10px*/
+    /*variable*/
+    --orange: rgb(231, 111, 81);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: "Roboto", serif;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 54rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 72rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 96rem;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        width: 114rem;
+    }
+}
+
+@media (min-width: 1400px ){
+    .container{
+        width: 137rem ;
+    }
+}
+
+a{
+    text-decoration: none;
+}
