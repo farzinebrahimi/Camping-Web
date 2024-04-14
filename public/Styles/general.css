@@ -1,13 +1,14 @@
 :root {
     box-sizing: border-box;
-    background-color: var(--lightorange);
+    background-color: var(--app-bg);
     font-size: 62.5%; /*10px*/
     /*variable*/
     --orange: rgb(231, 111, 81);
     --white: white;
     --font-white: #d2d2d2;
     --dark: #3B3735;
-    --lightorange: #e7c9ac;
+    --app-bg: #FAF4F2;
+    --light-gray: #8D8D8D;
     --primary-font: Roboto, serif;
     --primary-font-md: Roboto Medium, serif;
     --secondary-font: Archivo Black, serif;
@@ -65,15 +66,15 @@ a {
  */
 .btn {
     /*display: block;*/
+    font-family: var(--primary-font-md);
     width: 18rem;
     height: 5rem;
     border-radius: 10rem;
-    color: var(--white);
-    background-color: var(--dark);
+    /*color: var(--white);*/
+    /*background-color: var(--dark);*/
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    font-family: Roboto Medium, serif;
 }
