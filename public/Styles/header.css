@@ -1,0 +1,324 @@
+
+.header {
+    background: linear-gradient(rgba(59, 53, 53, 0.5), rgba(59, 53, 53, 0.5)),
+    url("../../assets/image-jpg/header-bg.jpg") center;
+    background-size: cover;
+    /*min-height: 85vh;*/
+    min-height:108rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+
+.container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*
+    ==========================
+            Navigation
+    ==========================
+*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+.nav__wrapper {
+    display: flex;
+    align-content: center;
+
+}
+
+/*
+    =================
+         App Logo
+    =================
+*/
+
+.app-logo {
+    display: block;
+    height: 5.5rem;
+    width: 5.5rem;
+    margin-right: 4rem;
+}
+
+.app-logo_img {
+    height: 100%;
+    width: 100%;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: -25rem;
+    bottom: 0;
+    width: 25rem;
+    padding: 2.5rem;
+    background-color: var(--dark);
+    transition: all 250ms ease-in-out;
+}
+
+.nav-menu--open {
+    left: 0;
+}
+
+.nav-menu__title {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-family: var(--secondary-font);
+    border-bottom: 0.1rem solid var(--white);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/*
+    ==========================
+          Mobile Main Menu
+    ==========================
+*/
+.mobile-menu {
+    margin-bottom: 3rem;
+}
+
+.mobile-menu__item {
+
+}
+
+.mobile-menu__link {
+    color: var(--font-white);
+    position: relative;
+    transition: all 250ms ease-in;
+}
+
+.mobile-menu__link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0;
+    height: 0.3rem;
+    border-radius: 10rem;
+    background-color: var(--orange);
+    transition: all 250ms ease-in;
+}
+
+.mobile-menu__link:hover {
+    padding-left: 2rem;
+    color: var(--white);
+}
+
+.mobile-menu__link:hover::before {
+    width: 1.6rem;
+
+}
+
+.nav-menu__links {
+    display: flex;
+}
+
+.nav-menu__link {
+    color: var(--white);
+    display: block;
+    padding: 0.2rem;
+    flex-grow: 1;
+    text-align: center;
+    transition: all 100ms ease-in;
+}
+
+.nav-menu__link:hover {
+    color: var(--white);
+    display: block;
+    padding: 0.2rem;
+    flex-grow: 1;
+    text-align: center;
+    transition: all 100ms ease-in;
+}
+
+.nav-menu__link--border {
+    border-radius: 10rem;
+    border: 0.1rem solid var(--white);
+}
+
+.nav-menu__link--border:hover {
+    background-color: var(--white);
+    color: var(--dark);
+}
+
+/*
+    ==========================
+        Desktop Main Menu
+    ==========================
+*/
+.desktop-menu {
+    display: none;
+    align-items: center;
+}
+
+.desktop-menu__item {
+    margin-right: 1.5rem;
+    align-content: center;
+}
+
+.desktop-menu__link {
+
+    color: var(--font-white);
+    transition: color 100ms;
+}
+
+.desktop-menu__link-active {
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+.desktop-menu__link-active::before {
+    content: '';
+    position: absolute;
+
+    /*line position*/
+    top: 7px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 4rem;
+    height: 0.3rem;
+    background-color: var(--orange);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.desktop-menu__link:hover {
+    color: var(--white);
+}
+
+.desktop__links {
+    display: none;
+
+}
+
+.desktop__link {
+    color: var(--white);
+    font-family: var(--primary-font-md);
+    margin-left: 3rem;
+    transition: all 100ms ease-in;
+}
+
+
+.desktop__link:hover {
+    color: var(--font-white);
+}
+
+.desktop__link--border {
+    border: 0.1rem solid var(--white);
+    border-radius: 10rem;
+    padding: 1rem 2.5rem;
+    transition: all 100ms ease-in;
+}
+
+.desktop__link--border:hover {
+    background-color: var(--white);
+    color: var(--dark);
+    border: 0.1rem solid var(--white);
+}
+
+/*
+    ====================
+        Hamburger Menu
+    ====================
+*/
+.nav__btn {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav__btn-line {
+    display: block;
+    position: relative;
+    width: 3rem;
+    height: 0.3rem;
+    background-color: var(--orange);
+    border-radius: 5rem;
+    transition: all 150ms ease-in-out;
+}
+
+.nav__btn-line::after,
+.nav__btn-line::before {
+    position: absolute;
+    content: "";
+    width: 3rem;
+    height: 0.3rem;
+    background-color: var(--orange);
+    border-radius: 5rem;
+    transition: all 200ms ease-in-out;
+}
+
+.nav__btn-line::after {
+    top: -1rem;
+}
+
+.nav__btn-line::before {
+    top: 1rem;
+}
+
+.nav__btn--open .nav__btn-line {
+    background-color: transparent;
+}
+
+.nav__btn--open .nav__btn-line::before {
+    transform: translateY(-1rem) rotate(45deg);
+}
+
+.nav__btn--open .nav__btn-line::after {
+    transform: translateY(1rem) rotate(-45deg);
+}
+
+/*
+    ======================
+        Header Content
+    ======================
+*/
+.header-content {
+    text-align: center;
+    margin-top: 20rem;
+    color: var(--white);
+}
+
+.header-content__title {
+    font-family: var(--secondary-font);
+    font-size: 4.8rem;
+    line-height: 1.2;
+    margin: 0 auto 3rem auto;
+    max-width: 35rem;
+}
+
+.header-content__caption {
+    font-size: 1.8rem;
+    max-width: 34rem;
+    margin: 0 auto 2rem auto;
+}
+
+.header-content__link {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.header-content__link:hover {
+    background-color: var(--white);
+    color: var(--dark);
+    border: 0.1rem solid var(--white);
+}

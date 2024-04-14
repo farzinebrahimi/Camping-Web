@@ -1,9 +1,17 @@
 :root {
     box-sizing: border-box;
-
+    background-color: var(--lightorange);
     font-size: 62.5%; /*10px*/
     /*variable*/
     --orange: rgb(231, 111, 81);
+    --white: white;
+    --font-white: #d2d2d2;
+    --dark: #3B3735;
+    --lightorange: #e7c9ac;
+    --primary-font: Roboto, serif;
+    --primary-font-md: Roboto Medium, serif;
+    --secondary-font: Archivo Black, serif;
+
 }
 
 *, *:before, *:after {
@@ -13,7 +21,7 @@
 body {
     line-height: 1.6;
     font-size: 1.6rem;
-    font-family: "Roboto", serif;
+    font-family: var(--primary-font);
 }
 
 @media (min-width: 576px) {
@@ -33,18 +41,39 @@ body {
         width: 96rem;
     }
 }
-@media (min-width: 1200px){
-    .container{
+
+@media (min-width: 1200px) {
+    .container {
         width: 114rem;
     }
 }
 
-@media (min-width: 1400px ){
-    .container{
-        width: 137rem ;
+@media (min-width: 1400px ) {
+    .container {
+        width: 137rem;
     }
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+/*
+
+-- Component--
+
+ */
+.btn {
+    /*display: block;*/
+    width: 18rem;
+    height: 5rem;
+    border-radius: 10rem;
+    color: var(--white);
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Roboto Medium, serif;
 }

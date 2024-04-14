@@ -1,0 +1,40 @@
+.main{
+    margin-top: -20rem;
+}
+
+.container{
+    
+}
+.services{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.service{
+    background-color: var(--white);
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+    width: 35.7rem;
+    min-height: 31.2rem;
+}
+.service__img{
+    
+}
+.service__title{
+    font-family:var(--secondary-font);
+    font-size: 1.8rem;
+    
+}
+.service__caption{
+    font-family: var(--primary-font);
+    text-align: center;
+    
+    
+}
