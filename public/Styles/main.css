@@ -38,7 +38,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 4rem;
+    padding: 0 2rem;
     margin-bottom: 2rem;
     width: 30rem;
     height: 26rem;
@@ -73,6 +73,8 @@
 .destinations {
     text-align: center;
     padding: 6rem 0 ;
+    
+   
 }
 
 .destinations__logo {
@@ -89,14 +91,26 @@
 }
 
 .destinations__places{
-    
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
 }
 .place{
-    border-radius: 2rem;
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*display: flex;*/
     background-color: var(--white);
-    padding: 3rem;
+    flex-grow: 1;
+    width: 30rem;
+    border-radius: 2rem;
+    padding: 2rem;
     color: var(--dark);
     margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    overflow: hidden;
 }
 .place__banner{
     position: relative;  
@@ -117,18 +131,20 @@
     align-items: center;
     position: absolute;
     top: 1.5rem;
-    padding-bottom:0.5rem;
     right: 1.5rem;
+    padding-bottom:0.5rem;
     width: 4rem;
     height: 4rem;
     border-radius: 1.5rem;
     cursor: pointer;
 }
 .place__like-icon{
-    
+    fill: var(--white);
+    stroke: var(--orange);
 }
-.place__like-icon--fill:active{
-    
+.place__like-icon--fill{
+    stroke: var(--white);
+    fill: var(--orange);
 }
 .place__price{
     background-color: var(--white);
@@ -151,9 +167,13 @@
 }
 .place__title{
     font-family: var(--secondary-font);
+    font-size: 1.8rem;
     margin-top: 3rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
 }
 .place__caption{
     font-family: var(--primary-font-md);
