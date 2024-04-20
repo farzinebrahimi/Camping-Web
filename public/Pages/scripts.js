@@ -1,8 +1,8 @@
 const navBtn = document.querySelector(".nav__btn")
 const navMenu = document.querySelector(".nav-menu")
-const likeFill = document.querySelector(".place__like-icon")
+
 let navOpen = false;
-let likeActive = false;
+
 
 navBtn.addEventListener("click", function (){
     if(navOpen ){
@@ -28,13 +28,3 @@ desktopMenu.addEventListener("click", function() {
         
     
 });
-
-likeFill.addEventListener("click", function() {
-    if(likeActive){
-        likeFill.classList.remove("place__like-icon--fill")
-        likeActive = false;
-    }else{
-        likeFill.classList.add("place__like-icon-fill")
-        likeActive = true;
-    }
-})

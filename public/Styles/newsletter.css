@@ -1,75 +1,74 @@
 .newsletter {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -1rem;
-    margin-left: -1rem; 
-}
-
-.newsletter-frame {
     background-color: var(--light-orange);
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
-    margin-bottom: 2rem;
-    min-width: 3rem;
-    height: auto;
+    color: var(--dark);
     border-radius: 2rem;
     text-align: center;
-    color: var(--dark);
-    margin-right: 1rem;
-    margin-left: 1rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 6rem 0;
 }
-.newsletter__img {
-    display: block;
-    max-width: 35rem;
-    height: auto
+
+.newsletter__content {
+    padding: 0 2rem;
+    
 }
 
 .newsletter__title {
     font-family: var(--secondary-font);
-    font-size: 4rem;
-    width: 25rem;
+    font-size: 3rem;
+    margin: 1.5rem auto;
 }
 
 .newsletter__caption {
     font-family: var(--primary-font-md);
-    text-align: center;
-    padding: 1rem 2rem ;
 }
 
-.searchbar {
-    position: relative;
-    width: 100%;
-    max-width:  61rem;
-}
-
-.searchbar__input {
-  border-radius: 1rem;
-    border: none;
-    height: 8rem;
-    min-width: 100%;
-    padding:0 1rem 0 1rem;
-    margin-bottom: 2rem;
+.newsletter__email-box {
+    background-color: var(--white);
+    height: 7rem;
+    padding: 0 1.5rem;
+    border-radius: 1.5rem;
     margin-top: 2rem;
     
 }
 
-.searchbar__img {
+.newsletter__email-icon {
+
+}
+.newsletter__form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.newsletter__input {
+    outline: none;
+    border: none;
+    height: 100% ;
+    color: #8D8D8D;
+    width: 100%;
+}
+
+
+.newsletter__submit {
+    outline: none;
+    border: none;
     background-color: var(--orange);
-    position: absolute;
-    right: 2rem;
-    top: 3.5rem;
+    width: 5rem ;
+    height: 5rem ;
+    border-radius: 2rem;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 1rem;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 1.5rem;
-
+    box-shadow: 3px 3px 5px  rgba(231, 111, 81,0.5);
     cursor: pointer;
 }
 
+.newsletter__banner {
+    
+}
+
+.newsletter__img {
+    width: 100%;
+}

@@ -13,7 +13,7 @@
     --primary-font: Roboto, serif;
     --primary-font-md: Roboto Medium, serif;
     --secondary-font: Archivo Black, serif;
-
+    /*user-select: none;*/
 }
 
 *, *:before, *:after {
@@ -71,8 +71,8 @@ a {
     width: 18rem;
     height: 5rem;
     border-radius: 10rem;
-    /*color: var(--white);*/
-    /*background-color: var(--dark);*/
+    color: var(--white);
+    background-color: var(--dark);
     display: flex;
     justify-content: center;
     align-items: center;

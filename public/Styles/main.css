@@ -20,10 +20,8 @@
     margin-top: -15rem;
     display: flex;
     flex-wrap: wrap;
-    margin-right: -1rem;
-    margin-left: -1rem;
-    /*gap: 2rem; =>  some browser couldn't 
-                    support this property*/
+    
+    gap: 2rem; 
 }
 
 /*
@@ -40,13 +38,12 @@
     align-items: center;
     padding: 0 2rem;
     margin-bottom: 2rem;
-    width: 30rem;
+    width: 32rem;
     height: 26rem;
     border-radius: 2rem;
     text-align: center;
     color: var(--dark);
-    margin-right: 1rem;
-    margin-left: 1rem;
+    
 }
 
 .service__img {
@@ -73,8 +70,7 @@
 .destinations {
     text-align: center;
     padding: 6rem 0 ;
-    
-   
+    color: var(--dark)
 }
 
 .destinations__logo {
@@ -84,10 +80,8 @@
 .destinations__title {
     font-family: var(--secondary-font);
     font-size: 3rem;
-    line-height: 1.2;
     margin: 3rem auto;
     max-width: 35rem;
-    color: var(--dark);
 }
 
 .destinations__places{
@@ -97,10 +91,6 @@
     margin-left: -1rem;
 }
 .place{
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*display: flex;*/
     background-color: var(--white);
     flex-grow: 1;
     width: 30rem;
